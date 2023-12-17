@@ -1,0 +1,144 @@
+*{
+    font-family: 'Mulish', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --dark:#182335;
+    --subheading: 'Lora', serif;
+    --headig: 'Merriweather', serif;
+    --white: #FFFFFF;
+    --red:#E15546;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+}
+.left-container h1{
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+}
+.left-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+.left-container img{
+    position: absolute;
+    left: 10%;top: 10rem;
+}
+.left-container form{
+    background: #FFFFFF;
+    border: 2px solid #EAE4CC;
+    box-shadow: 12px 12px 0px #EAE4CC;
+    border-radius: 15px;
+    width: 648px;
+    height: 546px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    margin-top: 8rem;
+}
+.info-two p,
+.info p{
+    font-size: 12px;
+    color: #EAE4CC;
+}
+
+.info-two label,
+.info label{
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif; 
+
+}
+.info-two{
+    display: flex;
+    flex-direction: row;
+}
+.info-two input,
+.info input{
+    border: 2px solid #EAE4CC;
+    width: 208px;
+    height: 30px;
+    margin: 0 1rem 0 0 ;
+    font-size: 15px;
+    padding-left: .2rem;
+}
+form button{
+    background: #FFFFFF;
+    border: 2px solid #EAE4CC;
+    box-shadow: 5px 5px 0px #EAE4CC;
+    border-radius: 25px;
+    width: 195px;
+    height: 60px;
+    font-size: 25px;
+    font-family: 'Lora', serif;
+    transition: background-color 0.3s ease; 
+}
+
+.right-container{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+}
+.right-container img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+.right-container .r-content{
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30rem;
+    padding: 1%     ;
+}
+.content h1{
+    font-size: 30px;
+    font-family: 'Lora', serif;
+    color: #FFFFFF;
+    font-weight: 100;
+}
+.content p{
+    font-size: 25px;
+    font-family: 'Mulish', sans-serif; 
+    color: #FFFFFF;
+    font-weight: 200;
+}
+
+.right-container a{
+    border: 5px solid #EAE4CC;
+    border-radius: 25px;
+    text-align: center;
+    width: 195px;
+    height: 60px;
+    font-size: 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lora', serif;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease; 
+    font-weight: bold;
+}
+form button:hover,
+.right-container a:hover {
+    background-color: #EAE4CC;
+    color: #000000;
+    font-weight: bolder;
+}
