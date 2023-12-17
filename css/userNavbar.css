@@ -1,0 +1,134 @@
+*{
+    font-family: 'Mulish', sans-serif; 
+    margin: 0;
+}
+:root{
+    --dark:#182335;
+    --subheading: 'Lora', serif;
+    --headig: 'Merriweather', serif;
+    --white: #FFFFFF;
+    --red:#E15546;
+    --beige: #EAE4CC;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+}
+.top-nav{
+    background-color: var(--beige);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline:5% ;
+    align-items: center;
+}
+.navigations{
+    width: 30%;
+}
+.navigations ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.navigations li{
+    list-style: none;
+}
+.navigations a{
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--dark);
+    font-family: var(--subheading);
+}
+.nav-profile ul{
+    display: flex;
+    gap: 1rem;
+}
+.nav-profile li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+#design-logout{
+    background-color: var(--red);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--white);
+}
+#logout{
+    color: var(--white);
+    margin-left: 3px;
+    
+}
+.nav-profile ul li i{
+    font-size: 20px;
+}
+.nav-profile ul li a{
+    font-size: 18px;
+    text-decoration: none;
+}
+.nav-profile .boundary{
+    font-size: 25px;
+}
+.below-nav{
+    background: rgba(0, 0, 0, 0.5);
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.below-nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 50%;
+    align-items: center;
+}
+.below-nav li{
+    list-style: none;
+    
+}
+.below-nav a{
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--white);
+    font-family: var(--subheading);
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    cursor: pointer;
+
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    margin-top: 1.5%;
+   background-color: var(--white);
+   width: 150px;
+   line-height: 1.8rem;
+  
+}
+.dropdown-content li:hover{
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: var(--white);
+}
+#book-info:hover{
+    background-color: var(--red);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--white);
+    padding-inline: 5px;
+}
+#book-info{
+    padding-inline: 5px;
+    padding: 5px;
+}
