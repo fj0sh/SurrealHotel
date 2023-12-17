@@ -1,0 +1,251 @@
+*{
+    font-family: 'Mulish', sans-serif; 
+    margin: 0;
+}
+:root{
+    --dark:#182335;
+    --subheading: 'Lora', serif;
+    --headig: 'Merriweather', serif;
+    --white: #FFFFFF;
+    --red:#E15546;
+    --beige: #EAE4CC;
+    --lightred: #EEAF9D;
+}
+.user-spa-page{
+    height: 600px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Image/spa/spa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    align-items: flex-end;
+}
+.user-spa-page h1{
+    font-size: 64px;
+    font-family: var(--subheading);
+    font-weight: lighter;
+    color: var(--white);
+    padding-bottom: 5%;
+}
+.spa-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-inline: 15%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    gap: 3rem;
+    background: rgba(238, 175, 157, 0.5);
+}
+.spa-content h1{
+    font-size: 48px;
+    font-family: var(--subheading);
+    font-weight: lighter;
+}
+.spa-content p{
+    font-size: 25px;
+}
+
+.spa-content a{
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--red);
+    padding: 1%;
+    font-size: 30px;
+    padding-inline: 5%;
+    border-radius: 10px;
+    font-family: var(--subheading);
+}
+.spa-content a:hover{
+    background-color: var(--dark);
+}
+
+#spa-slideshow-image{
+    padding: 2%;
+}
+
+#spa-slideshow-image h1{
+    font-size: 45px;
+    font-weight: lighter;
+    font-family: var(--subheading);
+    
+}
+#spa-slideshow-image p{
+    color: var(--red);
+    font-size: 20px;
+}
+
+.footer-image{
+    height: 470px;
+    background: url(../Image/footer-image-room.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+   
+}
+.footer-image li{
+    list-style: none;padding: 4%;
+    line-height: 4rem;
+}
+.footer-image li h1{
+    font-size: 64px;
+    color: var(--white);
+    font-family: var(--heading);
+    font-weight: lighter;
+    padding-inline:10%;
+}
+/* 
+footer */
+footer{
+    background-color: var(--dark);
+    padding: 1%;
+  }
+  
+  .top-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .top-footer .logo-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top-footer .logo-footer h2{
+    color: var(--white);
+    font-weight: lighter;
+    font-family: var(--subheading);
+  }
+  
+  .nav-info-footer h1{
+    font-size: 30px;
+    color: var(--white);
+    font-family: var(--subheading);
+    padding: 1%;
+  }
+  .nav-info-footer .nav-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;padding-top: 10%;
+  }
+  .nav-info-footer .nav-footer p{
+    font-size: 20px;
+    color: var(--white);
+    font-family: var(--subheading);
+  }
+  .top-footer .link-footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+  }
+  .top-footer .link-footer h1{
+    color: var(--white);
+    padding: 5%;
+  
+  }
+  .top-footer .li-footer{
+    display: flex;
+    gap: 4rem;
+  }
+  .top-footer .link-footer i{
+    font-size: 40px;
+    color: var(--white);
+    border: 1px solid #FFFFFF;
+    padding: 5%;
+    border-radius: 50%;
+  }
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The slides */
+.mySlides {
+    text-align: center;
+    width: 100%;
+    padding-top: 4%;
+    display: flex;
+    align-items: center;
+}
+
+.mySlides img {
+    width: 80%;
+    height: 300px;
+    display: inline-block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 5px;
+}
+
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;    
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: var(--dark);
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 5px;
+    user-select: none;
+    background-color: var(--beige);
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px;
+    
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: var(--dark);
+    color: var(--white);
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: var(--lightred);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: var(--dark);
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }

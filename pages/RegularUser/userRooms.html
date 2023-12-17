@@ -1,0 +1,212 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@300&family=Mulish&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../../css/userRooms.css">
+        <link rel="stylesheet" href="../../css/userNavbar.css">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <title>Surreal Staycation Suites | Rooms</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="top-nav">
+                <div class="nav-logo">
+                    <img src="../../Image/Front-removebg-preview.png" alt="" width="133px" height="107px">
+                </div>
+                <div class="navigations">
+                    <ul>
+                        <li><a href="userDashboard.html">Dashboard</a></li>
+                        <li><a href="userAboutUs.html">About Us</a></li>
+                        <li><a href="userRooms.html">Rooms</a></li>
+                        <li><a href="userContactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="nav-profile">
+                    <ul>
+                        <li>Booking History</li>
+                        <li><i class="fa-solid fa-user"></i> <p id="nameCont"></p> </li>
+                        <li class="boundary">|</li>
+                        <li><i class="fa-solid fa-right-from-bracket"></i><a href="../LandingPage.html">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="below-nav">
+                <ul>
+                <li><a href="userFacilities.html">FACILITIES</a></li>
+                <li><a href="userDining.html">DINING</a></li> 
+                <li><a href="userSpa.html">SPA</a></li> 
+                </ul>
+            </div>
+        </nav>
+    <div class="user-rooms-page">
+        <h1>Relax, Unwind, and Make Yourself at Home</h1>
+    </div>
+    <div class="room-second">
+            <h1>A memorable experience in the heart of Cebu
+                featuring five-star service.</h1>
+            <p>Location, location, location! Surreal StayCation Suits is located down a quiet EMCO bldg., Lot 19, Blck. 2, New Era St., Barrio Luz, Mabolo Cebu City
+                Which will you indulge in first?
+            </p>
+            <p>Stay with us at Surreal StayCation Suits in the midst of it all!</p>
+    </div>
+    <div class="book-rooms">
+            <div id="bookingModal" class="booking-modal">
+                <!-- Modal content -->
+                <div class="booking-modal-content">
+                <span class="close">&times;</span>
+                    <div class="reserve-room">
+                        <h1>Booking Room</h1>
+                        <form id="roomForm" method="post" onsubmit="requestRoom(event)">
+                            <input type="hidden" id="roomType" name="roomType">        
+
+                            <div class="combine-book-info">
+                                <div class="book-info">
+                                    <label for="">FirstName:</label>
+                                    <input type="text" name="firstname">
+                                </div>
+                                <div class="book-info">
+                                    <label for="">LastName:</label>
+                                    <input type="text" name="lastname">
+                                </div>
+                            </div>
+                            <div class="combine-book-info">
+                                <div class="book-info">
+                                    <label for="">Check-in Date:</label>
+                                    <input type="date" name="checkInDate">
+                                </div>
+                                <div class="book-info">
+                                    <label for="">Check-in Time:</label>
+                                    <input type="time"name="checkInTime">
+                                </div>
+                            </div>
+                            <div class="combine-book-info">
+                                <div class="book-info">
+                                    <label for="">Check-out Date:</label>
+                                    <input type="date" name="checkOut">
+                                </div>
+                                <div class="book-info">
+                                    <label for="">Number of Guest:</label>
+                                    <input type="number" name="guestNum">
+                                </div>
+                            </div>
+                          
+                            <div class="add-book-btn">
+                                <button type="submit"> BOOK NOW!</button>
+                            </div>
+                               
+                        </form>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="design-rooms">
+                <h2>ROOMS</h2>
+                <div class="line"></div>
+            </div>
+            <div class="rooms">
+                <div class="booking-rooms">
+                    <img src="../../Image/beed.png" alt="" width="600px" height="400px">
+                    <div class="room-info">
+                        <h1>Bronze Queen</h1>
+                        <p id="bronze-queenAv"></p>
+                        <p>Spread out over 27 sq. m., the Bronze Queen room comes with a single bed, perfect for the solo traveller.27 square meters | 1 Single bed (4.5 x 6.5 ft) | Sleeps 1</p>
+                        <div class="room-btn">
+                            <button id="bronzeq-btn" type="button" value="bronze-queen" onclick="roomsModal(this)">BOOK NOW!</button>
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <div class="booking-rooms">
+                    <div class="room-info">
+                        <h1>Bronze King</h1>
+                        <p>The Bronze King room is spread out over 25 sq. m. and the double bed is ideal for couples.25 square meters | 1 Double bed (6 x 6.5 ft) | Sleeps 2</p>
+                        <div class="room-btn">
+                            <button id="bronzek-btn" type="button" value="bronze-king" onclick="roomsModal(this)">BOOK NOW!</button>
+                        </div>
+                    
+                    </div>
+                    <img src="../../Image/king.png" alt="" width="600px" height="400px">
+                </div>
+
+                <div class="booking-rooms">
+                    <img src="../../Image/silver.png" alt="" width="600px" height="400px">
+                    <div class="room-info">
+                        <h1>Silver King</h1>
+                        <p>The Silver King room occupies an area of 29 sq. m. and the double bed is ideal for guests traveling in pairs.29 square meters | 1 Double bed (6 x 6.5 ft) | Sleeps 2</p>
+                        <div class="room-btn">
+                            <button id="silverk-btn" type="button" value="silver-king" onclick="roomsModal(this)">BOOK NOW!</button>
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <div class="booking-rooms">
+                    <div class="room-info">
+                        <h1>Gold King</h1>
+                        <p>The 36 sq. m. Gold King room comes with a double bed and is perfect for small families.36 square meters | 1 Double bed (6 x 6.5 ft) | Sleeps 2 adults + 2 children or 3 adults with 1 extra bed (additional charges apply)* *refer to hotel policies</p>
+                        <div class="room-btn">
+                            <button id="goldk-btn" type="button" value="gold-king" onclick="roomsModal(this)">BOOK NOW!</button>
+                        </div>
+                    
+                    </div>
+                    <img src="../../Image/gold.png" alt="" width="600px" height="400px">
+                </div>
+
+                <div class="booking-rooms">
+                    <img src="../../Image/twin.png" alt="" width="600px" height="400px">
+                    <div class="room-info">
+                        <h1>Gold Twin</h1>
+                        <p>The Gold Twin room is spread across 36 sq. m. and can accommodate up to 2 adults and 1 child.36 square meters | 2 Single Beds (4.5 x 6.5 ft each) | Sleeps 2 adults + 2 children or 3 adults with 1 extra bed (additional charges apply)* *refer to hotel policies</p>
+                        <div class="room-btn">
+                            <button id="goldt-btn" type="button" value="gold-twin" onclick="roomsModal(this)">BOOK NOW!</button>
+                        </div>   
+                    </div>
+                </div>
+            
+            </div>
+    </div>
+    <div class="footer-image">
+        <li>
+            <h1>Embrace a hidden gem in the city center, where tranquility meets the vibrant energy of urban living.</h1>
+        </li>
+        
+        </div>
+        <footer>
+            <div class="top-footer">
+                <div class="logo-footer">
+                    <img src="../../Image/footer/tab-removebg-preview 1.png" alt="" width="200px" height="200px">
+                    <h2>SURREAL STAYCATION SUITES</h2>
+                </div>
+                <div class="nav-info-footer">
+                    <h1>Information</h1>
+                    <div class="nav-footer">
+                        <p>Dashboard</p>
+                        <p>About Us</p>
+                        <p>Contact Us</p>
+                    </div>
+                </div>
+                <div class="link-footer">
+                    <h1>Links</h1>
+                    <div class="li-footer">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                </div>
+              
+            </div>
+    
+        </footer>
+    
+        <script src="../../js/regular.js"></script>
+    </body>
+    </html>

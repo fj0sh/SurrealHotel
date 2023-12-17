@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@300&family=Mulish&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/userDashboard.css">
+    <link rel="stylesheet" href="../../css/userNavbar.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <title>Surreal Staycation Suites | Dashboard</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="top-nav">
+            <div class="nav-logo">
+                <img src="../../Image/Front-removebg-preview.png" alt="" width="133px" height="107px">
+            </div>
+            <div class="navigations">
+                <ul>
+                    <li><a href="userDashboard.html">Dashboard</a></li>
+                    <li><a href="userAboutUs.html">About Us</a></li>
+                    <li><a href="userRooms.html">Rooms</a></li>
+                    <li><a href="userContactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-profile">
+                <ul>
+                    <div class="dropdown">
+                        <li id="book-info" onclick="showBookingInformation()">Booking Information<i
+                                class="fa-solid fa-caret-down"></i></li>
+                        <div class="dropdown-content" id="book-dropdown">
+                            <li onclick="showCurrentBookRoom()">Current Book Room</li>
+                            <li onclick="showBookingHistory()">Booking History</li>
+                        </div>
+                    </div>
+                    <li><i class="fa-solid fa-user"></i>
+                        <p id="nameCont"> </p>
+                    </li>
+                    <li class="boundary">|</li>
+                    <li id="design-logout"><i class="fa-solid fa-right-from-bracket"></i><a href="../LandingPage.html" id="logout">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="below-nav">
+            <ul>
+                <li><a href="userFacilities.html">FACILITIES</a></li>
+                <li><a href="userDining.html">DINING</a></li>
+                <li><a href="userSpa.html">SPA</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="user-dasboard-container">
+        <div class="user-db-head">
+            <ul>
+                <li>
+                    <h1>THE</h1>
+                    <hr>
+                </li>
+                <li>
+                    <h1>HOTEL</h1>
+                    <p>Unwind in a serene haven amidst the vibrant pulse of the city, creating the perfect urban sanctuary.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="slideshow-container">
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <div class="mySlides fade">
+              
+              <img src="../../Image/dining-one.png" >
+            </div>
+            
+            <div class="mySlides fade">
+              
+                <img src="../../Image/dining-one.png" >
+              
+            </div>
+            
+            <div class="mySlides fade">
+
+                <img src="../../Image/dining-one.png" >
+              
+            </div>
+
+            
+            
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+        </div>
+            <br>
+            
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+             <span class="dot" onclick="currentSlide(3)"></span>
+
+        </div>
+    </div>
+    <div class="dining-user-dashboard">
+        <div class="dining-content">
+            <div class="user-dining-left">
+                <ul>
+                    <li>
+                        <h1>DINING</h1>
+                        <hr>
+                    </li>
+                    <li>
+                        <p>Indulge in an array of global and Philippine culinary delights at our renowned dining establishment, Flava. Imbibe meticulously crafted cocktails while admiring the thoughtfully curated ambiance within Flava Lounge & Bar, or opt for a swift snack at Flava Lite Rooftop Bar & Cafe.</p>
+                    </li>
+                    <li class="left-btn">
+                        <a href="">LEARN MORE</a>
+                    </li>
+                </ul>
+                <br><br>
+                <div class="dining-left-images">
+                    <div class="left-images">
+                        <img src="../../Image/dining-one.png" alt="" width="400px" height="280px">
+                        <div class="left-img-content">
+                            <p>Flava Lite Rooftop Pool Bar & Cafe</p>
+                        </div>
+                    </div>
+                    <div class="left-images">
+                        <img src="../../Image/dining-one.png" alt="" width="400px" height="280px">
+                        <div class="left-img-content">
+                            <p>Flava Restaurant</p>
+                        </div>
+                    </div>                 
+                </div>
+            </div>
+            <div class="user-dining-right">
+                <img src="../../Image/diningImage.png" alt="" >
+                <div class="right-content">
+                    <ul>
+                        <li class="right">
+                            <a href="">LEARN MORE</a>
+                        </li>
+                        <li>
+                            <h2>Flava Lounge & Bar</h2>
+                        </li>
+                        <li>
+                            <p>Enjoy a wide range of carefully curated signature cocktails, imported beers and fine wines.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="user-spa-container">
+        <div class="top-spa-content">
+            <div class="left-spa">
+                <ul>
+                    <li>
+                        <h1>SPA</h1>
+                        <hr>
+                    </li>
+                    <li>
+                        <h2>Inner Radiance Spa</h2>
+                    </li>
+                    <li>
+                        <p>Immerse yourself in our Philippine-based spa, featuring five luxurious treatment rooms dedicated to offering a range of indulgent experiences, including our renowned signature Thai massages, foot massages, invigorating body scrubs, aromatic aromatherapy sessions, and relaxing oil massages.</p>
+                    </li>
+                    <li>
+                        <a href="">LEARN MORE</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-spa">
+                <img src="../../Image/spa/spa.png" alt="" width="50%">
+            </div>
+        </div>
+        <br><br>
+        <div class="below-spa-content">
+            <div class="spa-images">
+                <img src="../../Image/spa/spa.png" alt="" width="400px" height="250px">
+                <img src="../../Image/spa/spa.png" alt="" width="400px">
+                <img src="../../Image/spa/spa.png" alt="" width="400px">
+            </div>
+        </div>
+    </div>
+    <div class="user-facilities-container">
+        <ul>
+            <h1>FACILITIES</h1>
+            <hr>
+        </ul>
+        <div class="facilities-image">
+            <div class="facilities-content">
+                <img src="../../Image/facilities-image.png" alt="" width="100%" height="400px">
+                <div class="facilities-hover">
+                    <h1>Rooftop Swimming Pool</h1>
+                    <p>Enjoy a refreshing dip in our roofrtop swimming pool, indulge in an invigoration session in the jacuzzi, or simply work on tan on the sunbeds. Our swimming pool is operation from 8 am to 10 pm
+                    </p>
+                    <a href="">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="facilities-content">
+                <img src="../../Image/spa/spa.png" alt="" width="100%" height="400px">
+                <div class="facilities-hover">
+                    <h1>Rooftop Swimming Pool</h1>
+                    <p>Enjoy a refreshing dip in our roofrtop swimming pool, indulge in an invigoration session in the jacuzzi, or simply work on tan on the sunbeds. Our swimming pool is operation from 8 am to 10 pm
+                    </p>
+                    <a href="">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="facilities-content">
+                <img src="../../Image/beed.png" alt="" width="100%" height="400px">
+                <div class="facilities-hover">
+                    <h1>Rooftop Swimming Pool</h1>
+                    <p>Enjoy a refreshing dip in our roofrtop swimming pool, indulge in an invigoration session in the jacuzzi, or simply work on tan on the sunbeds. Our swimming pool is operation from 8 am to 10 pm
+                    </p>
+                    <a href="">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="facilities-content">
+                <img src="../../Image/facilities-one.png" alt="" width="100%" height="400px">
+                <div class="facilities-hover">
+                    <h1>Rooftop Swimming Pool</h1>
+                    <p>Enjoy a refreshing dip in our roofrtop swimming pool, indulge in an invigoration session in the jacuzzi, or simply work on tan on the sunbeds. Our swimming pool is operation from 8 am to 10 pm
+                    </p>
+                    <a href="">LEARN MORE</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="whychooseus">
+        <div class="choose-content">
+            <h3>WHY YOU CHOOSE US?</h3>
+            <div class="line"></div>
+        </div>
+        <div class="choose-service">
+            <div class="service-icon">
+                <i class="fa-solid fa-bed"></i>
+                <p>123 Guest Rooms and Suites</p>
+            </div>
+            <div class="service-icon">
+                <i class="fa-solid fa-dumbbell"></i>
+                <p>24hr gym</p>
+            </div>
+            <div class="service-icon">
+                <i class="fa-solid fa-spa"></i>
+                <p>SPA</p>
+            </div>
+            <div class="service-icon">
+                <i class="fa-solid fa-person-swimming"></i>
+                <p>Rooftop swimming  pool</p>
+            </div>
+            <div class="service-icon">
+                <i class="fa-solid fa-wifi"></i>
+                <p>free high speed wifi</p>
+            </div>
+            <div class="service-icon">
+                <i class="fa-solid fa-building"></i>
+                <p>located near shopping malls</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- modals -->
+    <div class="current-booking-modal" id="current-booking">
+        <div class="current-booking-content">
+            <span class="close">&times;</span>
+            <div class="current-book-form">
+                <h2>Current Book Room</h2>
+                <table>
+                    <tbody id="bookedtbl">
+                        <tr>
+                            <th>Booked For</th>
+                            <th>Check In</th>
+                            <th>Check Out</th>
+                            <th>Number of Guest</th>
+                            <th>Room Number</th>
+                            <th>Room Type</th>
+                            <th>Action </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <div class="booking-history-modal" id="booking-history">
+        <div class="booking-history-content">
+            <span class="close">&times;</span>
+            <div class="history-form">
+                <h2>Booking History</h2>
+                <table>
+                    <tbody id="historytbl">
+                        <tr>
+                            <th>Name</th>
+                            <th>Check-in Date</th>
+                            <th>Check-out Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="top-footer">
+            <div class="logo-footer">
+                <img src="../../Image/footer/tab-removebg-preview 1.png" alt="" width="200px" height="200px">
+                <h2>SURREAL STAYCATION SUITES</h2>
+            </div>
+            <div class="nav-info-footer">
+                <h1>Information</h1>
+                <div class="nav-footer">
+                    <p>Dashboard</p>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                </div>
+            </div>
+            <div class="link-footer">
+                <h1>Links</h1>
+                <div class="li-footer">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                </div>
+            </div>
+          
+        </div>
+
+    </footer>
+
+    <script src="../../js/index.js"></script>
+    <script src="../../js/regular.js"></script>
+
+</body>
+
+</html>
