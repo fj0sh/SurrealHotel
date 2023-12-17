@@ -1,0 +1,87 @@
+*{
+    font-family: 'Mulish', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --dark:#182335;
+    --subheading: 'Lora', serif;
+    --headig: 'Merriweather', serif;
+    --white: #FFFFFF;
+    --red:#E15546;
+}
+.sidebar{
+    width: 15%; 
+    background-color: var(--dark);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+ 
+}
+.sidebar_content{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sidebar_nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+   
+}
+.sidebar_nav a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Lora', serif;
+    color: var(--white);
+}
+.sidebar_nav li{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding-inline:1.4rem;
+    
+}
+.sidebar_nav li:hover{
+    background-color: var(--white);
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.sidebar_nav a:hover{
+    color: #000000;
+}
+.sidebar_nav li:valid{
+    background-color: var(--white);
+}
+.sidebar_nav ul{
+    line-height: 3.8rem;
+}
+.sidebar_nav i{
+    font-size: 25px;
+    color:var(--red);
+}
+
+.admin-booking-container, .dashboard-content, .inventory-table, .feedback-content{
+    margin-left: 15%;
+}
+
+
+.sidebar_nav .active  {
+    background-color: var(--white);
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #000000;
+}
+.sidebar_nav li.active a {
+    color: #000000;
+}

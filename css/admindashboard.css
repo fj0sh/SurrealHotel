@@ -1,0 +1,131 @@
+
+:root{
+    --dark:#182335;
+    --subheading: 'Lora', serif;
+    --headig: 'Merriweather', serif;
+    --white: #FFFFFF;
+    --red:#E15546;
+    --biege: #EAE4CC;
+}
+
+.admin_dashboard_container{
+    display: flex;
+    flex-direction: row;
+}
+.admin-content-dashboard{
+    width: 100%;
+}
+.dashboard-content p{
+    padding-inline: 3%;
+    padding-top: 2%;
+    color: var(--dark);
+}
+.dashboard-content h2,h1{
+    padding-inline: 6%;
+    padding-top: 1.5%;
+}
+.dashboard-content h1{
+    font-size: 25px;
+}
+.dashboard-content h2{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.d-content-card{
+    display: flex;
+    padding-inline: 6%;
+    padding-top: 3%;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    
+}
+.d-card{
+    width: 206px;
+    height: 137px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+    border-radius: 5px;
+    background-color: var(--biege);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.d-card p{
+    font-size: 25px;
+    font-family: var(--subheading);
+}
+.d-card i{
+    font-size: 35px;
+}
+.card-below{
+    display: flex;
+    gap: 10%;
+}
+.d-card:hover{
+    background: var(--dark);
+    color: var(--white);
+}
+
+.d-card:hover p{
+    color: var(--white);
+}
+.d-user-content{
+    display: flex;
+    padding-inline: 8%;
+    gap: 1rem;
+    justify-content: center;
+}
+.user-information h3{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 1%;
+    background-color: var(--biege);
+    font-size: 25px;
+    font-family: var(--subheading);
+}
+.user-information th{
+    padding: 1%;
+    background: rgba(24, 35, 53, 0.85);
+    color: var(--white);
+    text-align: left;
+}
+.user-information table{
+    border-collapse: collapse
+}
+.user-information td{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+.user-information{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.top-rooms{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.top-rooms h3{
+    font-size: 25px;
+    font-family: var(--subheading);
+    background-color: var(--biege);
+    padding: 2%;
+    text-align: center;
+}
+.top-rooms td{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+
+
