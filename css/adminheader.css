@@ -1,0 +1,61 @@
+
+
+:root{
+    --dark:#182335;
+    --subheading: 'Lora', serif;
+    --headig: 'Merriweather', serif;
+    --white: #FFFFFF;
+    --red:#E15546;
+    --biege: #EAE4CC;
+}
+
+header{
+    background-color: var(--biege);
+    height: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+
+}
+.admin-profile{
+    padding-inline: 5%;
+    padding-top: 3%;
+}
+.admin-profile img{
+    border-radius: 50%;
+    margin:0 10px;
+}
+.admin-profile-content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.admin-profile-content li{
+    list-style: none;
+    gap: 1rem;
+    background: #E15546;
+    width: 132px;
+    height: 37px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+.admin-profile-content i{
+    color: var(--white);
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.admin-profile-content a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: lighter;
+    padding-left: 3px;
+}
