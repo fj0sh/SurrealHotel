@@ -1,0 +1,132 @@
+:root{
+    --dark:#182335;
+    --subheading: 'Lora', serif;
+    --headig: 'Merriweather', serif;
+    --white: #FFFFFF;
+    --red:#E15546;
+    --biege: #EAE4CC;
+}
+
+
+.admin-inventory-container{
+    display: flex;
+    flex-direction: row;
+}
+.admin-inventory-content{
+    width: 100%;
+}
+.f-int-cont{
+    display: flex;
+    justify-content: space-around;
+    padding-inline: 5%;
+    padding-top: 2%;
+    align-items: center;
+    gap: 65%;
+}
+.f-int-cont i{
+   font-size: 36px;
+   background-color: var(--red);
+   padding-inline: 5px;
+   background-color: var(--biege);
+
+}
+.f-int-cont {
+    display: flex;
+    justify-content: flex-start;
+}
+.f-int-cont button{
+    border: none;
+    height: 36px;
+    font-size: 15px;
+    padding: 10px;
+    background-color: var(--red);
+    color: var(--white);
+    display: flex;
+}
+.f-int-cont button:hover{
+    background-color: var(--dark);
+}
+.f-int-cont li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.f-int-cont i:hover {
+    color: var(--white);
+    background-color: var(--dark);
+}
+
+.inventory-table table{
+    border-collapse: collapse; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.inventory-table{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-inline: 15%;
+    padding-top: 2%;
+}
+.inventory-table th{
+    padding: 1%;
+    background: rgba(24, 35, 53, 0.85);
+    color: var(--white);
+    text-align: left;
+    
+}
+.inventory-table td{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+.inventory-btn button{
+    background-color: var(--red);
+    height:31px;
+    width: 86px;
+    font-size: 15px;
+    color: var(--white);
+    border: none;
+}
+.inventory-btn{
+    display: flex;
+}
+.inventory-table span{
+    font-size: 10px;
+}
+
+/* room modal */
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 1%;
+    width: 30%;
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  } 
